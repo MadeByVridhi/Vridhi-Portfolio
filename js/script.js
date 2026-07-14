@@ -390,3 +390,52 @@ serviceCards.forEach(card => {
     });
 
 });
+/* =========================
+   SKILLS ANIMATION
+========================= */
+
+const skillsSection = document.querySelector("#skills");
+const skillBars = document.querySelectorAll(".progress-bar");
+
+const skillsObserver = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            skillBars.forEach(bar=>{
+
+                bar.classList.add("animate");
+
+                const percent = bar.parentElement.previousElementSibling.querySelector(".percent");
+
+let value = 0;
+const target = parseInt(percent.textContent);
+
+percent.textContent = "0%";
+
+const counter = setInterval(() => {
+
+    value++;
+
+    percent.textContent = value + "%";
+
+    if(value >= target){
+        clearInterval(counter);
+    }
+
+},20);
+
+            });
+
+        }
+
+    });
+
+},{
+    threshold:0.4
+});
+
+if (skillsSection) {
+    skillsObserver.observe(skillsSection);
+}

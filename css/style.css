@@ -1251,16 +1251,18 @@ body.dark .nav-links{
 
 .progress-bar{
     height:100%;
+    width:0;
     border-radius:30px;
     background:linear-gradient(90deg,#6C63FF,#8B5CF6);
     box-shadow:0 0 20px rgba(108,99,255,.45);
+    transition:width 2s ease;
 }
 
-.progress-bar.html{width:95%;}
-.progress-bar.css{width:90%;}
-.progress-bar.js{width:75%;}
-.progress-bar.figma{width:85%;}
-.progress-bar.photoshop{width:90%;}
+.progress-bar.html.animate{width:95%;}
+.progress-bar.css.animate{width:90%;}
+.progress-bar.js.animate{width:75%;}
+.progress-bar.figma.animate{width:85%;}
+.progress-bar.photoshop.animate{width:90%;}
 
 .skill:hover .progress-bar{
     filter:brightness(1.15);
