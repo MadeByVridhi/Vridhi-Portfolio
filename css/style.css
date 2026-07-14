@@ -629,7 +629,8 @@ body{
     text-align:center;
     border:1px solid rgba(255,255,255,.3);
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.45s ease;
+    transition: transform .15s linear, box-shadow .35s ease;
+    will-change: transform;
     transform-style:preserve-3d;
     overflow:hidden;
     position:relative;
