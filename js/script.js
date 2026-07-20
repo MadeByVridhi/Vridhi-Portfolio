@@ -439,3 +439,41 @@ const counter = setInterval(() => {
 if (skillsSection) {
     skillsObserver.observe(skillsSection);
 }
+
+// =========================
+// Portfolio Filter
+// =========================
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const portfolioCards = document.querySelectorAll(".portfolio-card");
+const portfolioGrid = document.querySelector(".portfolio-grid");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const filterValue = button.getAttribute("data-filter");
+
+        if(filterValue === "all"){
+            portfolioGrid.style.gridTemplateColumns = "repeat(4,1fr)";
+        }else{
+            portfolioGrid.style.gridTemplateColumns = "repeat(2,1fr)";
+        }
+
+        portfolioCards.forEach(card => {
+
+            const category = card.getAttribute("data-filter")
+            if(filterValue === "all" || category === filterValue){
+                card.style.display = "block";
+            }else{
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
