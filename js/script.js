@@ -479,14 +479,5 @@ filterButtons.forEach(button => {
 });
 
 function toggleStrengthGallery() {
-    const gallery = document.getElementById("strengthGallery");
-    const button = document.querySelector(".view-more-btn");
-
-    gallery.classList.toggle("show");
-
-    if (gallery.classList.contains("show")) {
-        button.textContent = "Show Less";
-    } else {
-        button.textContent = "View More";
-    }
+    window.location.href = "strength.html";
 }

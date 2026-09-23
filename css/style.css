@@ -2572,3 +2572,63 @@ body.dark .category-content p{
         grid-template-columns: 1fr;
     }
 }
+
+/* Strength Campaign Heading + Description */
+
+.project-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.project-description {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.campaign-grid {
+    margin-top: 0;
+}
+
+.strength-images {
+    align-items: start;
+}
+
+.strength-images img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.strength-images {
+    display: block;
+    column-count: 2;
+    column-gap: 25px;
+}
+
+.strength-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+    break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+    .strength-images {
+        column-count: 1;
+    }
+}
+
+.strength-images {
+    display: block !important;
+    column-count: 2 !important;
+    column-gap: 25px !important;
+}
+
+.strength-images img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 0 25px 0 !important;
+    break-inside: avoid !important;
+}
