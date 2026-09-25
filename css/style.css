@@ -2632,3 +2632,11 @@ body.dark .category-content p{
     margin: 0 0 25px 0 !important;
     break-inside: avoid !important;
 }
+
+.portfolio-card {
+    margin-bottom: 40px;
+}
+
+.portfolio {
+    gap: 40px;
+}
