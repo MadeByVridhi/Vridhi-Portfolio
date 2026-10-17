@@ -1,21 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Explore Aakansha's web development, graphic design and UI/UX portfolio.">
     <title>AAKANSHA | Portfolio</title>
 
-    <!-- AOS Animation CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -23,876 +18,537 @@
     <div id="progressBar"></div>
 
     <!-- HEADER -->
-
     <header>
-
         <nav class="navbar">
+            <a href="#home" class="logo">AAKANSHA</a>
 
-            <div class="logo">
-                AAKANSHA
-            </div>
-
-
-            <div class="menu-toggle">
-                ☰
-            </div>
-
+            <button class="menu-toggle" type="button"
+                aria-label="Open navigation" aria-expanded="false">☰</button>
 
             <ul class="nav-links">
-
                 <li><a href="#home">Home</a></li>
-
                 <li><a href="#about">About</a></li>
-
                 <li><a href="#skills">Skills</a></li>
-
                 <li><a href="#services">Services</a></li>
-
                 <li><a href="#portfolio">Portfolio</a></li>
-
                 <li><a href="#certifications">Certificates</a></li>
-
                 <li><a href="#experience">Experience</a></li>
-
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
 
-
-            <button id="darkBtn">
-                🌙
-            </button>
-
+            <button id="darkBtn" type="button" aria-label="Toggle dark mode">🌙</button>
         </nav>
-
     </header>
 
-    <!-- HERO SECTION -->
+    <main>
 
-    <section class="hero" id="home" data-aos="fade-up">
-
-        <div class="hero-bg">
-
-            <span class="blob blob1"></span>
-            <span class="blob blob2"></span>
-            <span class="blob blob3"></span>
-
-        </div>
-
-        <div class="hero-content">
-
-
-            <p class="tag">
-                <i class="fa-solid fa-house"></i>
-                Hello, I'm
-            </p>
-
-
-            <h1>
-                AAKANSHA
-            </h1>
-
-
-            <h2 id="typing"></h2>
-
-
-            <p class="desc">
-                I create modern websites and creative designs that help businesses grow.
-            </p>
-
-            <a href="#portfolio" class="btn">
-                <i class="fa-solid fa-eye"></i>
-                Explore Portfolio
-            </a>
-
-        </div>
-
-
-        <div class="hero-image">
-
-
-            <div class="image-box">
-
-                <div class="circle"></div>
-
-                <div class="floating-card card-one">
-                    🎨 Design
-                </div>
-
-                <div class="floating-card card-two">
-                    💻 Code
-                </div>
-
-                <!-- Add your photo here later -->
-
-                <!--
-    <img src="images/profile.png" alt="AAKANSHA">
-    -->
-
-            </div>
-        </div>
-
-
-    </section>
-
-    <!-- =========================
-     STATS SECTION
-========================= -->
-
-    <section class="stats" data-aos="fade-up">
-
-        <div class="stat-box">
-            <h2 class="counter" data-target="30">0</h2>
-            <p>Projects</p>
-        </div>
-
-        <div class="stat-box">
-            <h2 class="counter" data-target="15">0</h2>
-            <p>Happy Clients</p>
-        </div>
-
-        <div class="stat-box">
-            <h2 class="counter" data-target="2">0</h2>
-            <p>Years Learning</p>
-        </div>
-
-        <div class="stat-box">
-            <h2 class="counter" data-target="100">0</h2>
-            <p>Dedication %</p>
-        </div>
-
-    </section>
-
-    <!-- ABOUT SECTION -->
-
-
-    <section class="about" id="about" data-aos="fade-up">
-
-
-        <div class="about-image">
-
-            <div class="about-card"></div>
-
-        </div>
-
-
-
-        <div class="about-content">
-
-
-            <p class="section-tag">
-                <i class="fa-solid fa-user"></i>
-                About Me
-            </p>
-
-            <h2>
-                Designing Creative Brands & Modern Websites
-            </h2>
-
-
-            <p>
-                I'm a passionate Graphic Designer, Web Developer and UI/UX Designer who loves creating modern websites,
-                engaging user interfaces and impactful visual designs. My goal is to deliver creative, responsive and
-                user-friendly digital experiences.
-            </p>
-
-
-
-            <div class="skills">
-
-                <span>Graphic Design</span>
-                <span>Web Development</span>
-                <span>UI/UX Design</span>
-                <span>WordPress</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Responsive Design</span>
-                <span>Figma</span>
-                <span>Photoshop</span>
-                <span>Illustrator</span>
-                <span>Brand Identity</span>
-
-
+        <!-- HERO -->
+        <section class="hero" id="home" data-aos="fade-up">
+            <div class="hero-bg">
+                <span class="blob blob1"></span>
+                <span class="blob blob2"></span>
+                <span class="blob blob3"></span>
             </div>
 
+            <div class="hero-content">
+                <p class="tag">
+                    <i class="fa-solid fa-house"></i> Hello, I'm
+                </p>
 
-        </div>
+                <h1>AAKANSHA</h1>
+                <h2 id="typing"></h2>
 
+                <p class="desc">
+                    I create modern websites and creative designs that help businesses grow.
+                </p>
 
-    </section>
+                <a href="#portfolio" class="btn">
+                    <i class="fa-solid fa-eye"></i> Explore Portfolio
+                </a>
+            </div>
 
-    <!-- =========================
-     SKILLS SECTION
-========================= -->
+            <div class="hero-image">
+                <div class="image-box">
+                    <div class="circle"></div>
+                    <div class="floating-card card-one">🎨 Design</div>
+                    <div class="floating-card card-two">💻 Code</div>
+                    <!-- Add your profile photo here if needed -->
+                    <!-- <img src="images/profile.png" alt="Aakansha"> -->
+                </div>
+            </div>
+        </section>
 
-    <section class="skills-section" id="skills" data-aos="fade-up">
+        <!-- STATS -->
+        <section class="stats" data-aos="fade-up">
+            <div class="stat-box">
+                <h2 class="counter" data-target="30">0</h2>
+                <p>Projects</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter" data-target="15">0</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter" data-target="2">0</h2>
+                <p>Years Learning</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter" data-target="100">0</h2>
+                <p>Dedication %</p>
+            </div>
+        </section>
 
-        <div class="section-title">
+        <!-- ABOUT -->
+        <section class="about" id="about" data-aos="fade-up">
+            <div class="about-image">
+                <div class="about-card"></div>
+            </div>
 
-            <p>
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                My Skills
-            </p>
+            <div class="about-content">
+                <p class="section-tag">
+                    <i class="fa-solid fa-user"></i> About Me
+                </p>
 
-            <h2>Tools & Technologies</h2>
+                <h2>Designing Creative Brands &amp; Modern Websites</h2>
 
-        </div>
+                <p>
+                    I'm a passionate Graphic Designer, Web Developer and UI/UX Designer
+                    who loves creating modern websites, engaging user interfaces and
+                    impactful visual designs. My goal is to deliver creative, responsive
+                    and user-friendly digital experiences.
+                </p>
 
-        <div class="skills-container">
-
-            <div class="skill">
-
-                <div class="skill-info">
+                <div class="skills">
+                    <span>Graphic Design</span>
+                    <span>Web Development</span>
+                    <span>UI/UX Design</span>
+                    <span>WordPress</span>
                     <span>HTML5</span>
-                    <span class="percent">95%</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar html"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-info">
                     <span>CSS3</span>
-                    <span class="percent">90%</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar css"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-info">
                     <span>JavaScript</span>
-                    <span class="percent">75%</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar js"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-info">
+                    <span>Responsive Design</span>
                     <span>Figma</span>
-                    <span class="percent">85%</span>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar figma"></div>
-                </div>
-
-            </div>
-
-            <div class="skill">
-
-                <div class="skill-info">
                     <span>Photoshop</span>
-                    <span class="percent">90%</span>
+                    <span>Illustrator</span>
+                    <span>Brand Identity</span>
                 </div>
+            </div>
+        </section>
 
-                <div class="progress">
-                    <div class="progress-bar photoshop"></div>
-                </div>
-
+        <!-- SKILLS -->
+        <section class="skills-section" id="skills" data-aos="fade-up">
+            <div class="section-title">
+                <p><i class="fa-solid fa-screwdriver-wrench"></i> My Skills</p>
+                <h2>Tools &amp; Technologies</h2>
             </div>
 
-        </div>
-
-    </section>
-
-
-    <!-- SERVICES -->
-
-
-    <section class="services" id="services" data-aos="fade-up">
-
-
-        <div class="section-title">
-
-            <p>
-                <i class="fa-solid fa-briefcase"></i>
-                My Services
-            </p>
-
-            <h2>
-                What Can I Do For You?
-            </h2>
-
-        </div>
-
-
-
-
-        <div class="service-container">
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    🎨
-                </div>
-
-                <h3>
-                    Graphic Design
-                </h3>
-
-                <p>
-                    Creative social media posts, branding, logos, posters and marketing designs.
-                </p>
-
-            </div>
-
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    💻
-                </div>
-
-                <h3>
-                    Web Development
-                </h3>
-
-                <p>
-                    Responsive and modern websites built with clean code and great user experience.
-                </p>
-
-            </div>
-
-
-
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    ✨
-                </div>
-
-                <h3>
-                    UI/UX Design
-                </h3>
-
-                <p>
-                    Beautiful interfaces designed for smooth and engaging digital experiences.
-                </p>
-
-            </div>
-
-
-
-        </div>
-
-
-    </section>
-
-
-    <!-- PORTFOLIO -->
-
-
-    <section class="portfolio" id="portfolio" data-aos="zoom-in">
-
-
-        <div class="section-title">
-
-            <p>
-                <i class="fa-solid fa-palette"></i>
-                My Portfolio
-            </p>
-
-
-            <h2>
-                Recent Creative Works
-            </h2>
-
-            <div class="portfolio-filter">
-
-                <button class="filter-btn active" data-filter="all">All</button>
-
-                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
-
-                <button class="filter-btn" data-filter="web">Web Development</button>
-
-                <button class="filter-btn" data-filter="ui">UI/UX</button>
-
-            </div>
-
-        </div>
-
-        <div class="portfolio-grid">
-
-            <div class="portfolio-card category-card" data-filter="graphic">
-
-                <h3 class="category-title">Graphic Design</h3>
-
-                <div class="category-preview">
-
-                    <img src="images/portfolio/london-trip.png" class="preview-img">
-
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-
-                    <div class="more-preview">+6</div>
-
-                </div>
-
-                <p class="category-desc">
-                    Posters, Logos, Branding, Social Media & More
-                </p>
-
-                <a href="graphic.html" class="explore-btn">
-                    Explore Collection →
-                </a>
-            </div>
-
-            <div class="portfolio-card category-card" data-filter="web">
-
-                <h3 class="category-title">Web Development</h3>
-
-                <div class="category-preview">
-
-    <img src="images/portfolio/glowsip.png" class="preview-img">
-    <img src="images/portfolio/sai-vinayak.png" class="preview-img">
-    <img src="images/portfolio/fitzone.png" class="preview-img">
-    <img src="images/portfolio/technova.png" class="preview-img">
-
-    <div class="more-preview">+2</div>
-
-</div>
-
-                <p class="category-desc">
-                    Responsive Websites, Landing Pages, Portfolios & More
-                </p>
-
-                <a href="web.html" class="explore-btn">
-                    Explore Collection →
-                </a>
-
-            </div>
-
-            <div class="portfolio-card category-card" data-filter="ui">
-
-                <h3 class="category-title">UI / UX Design</h3>
-
-                <div class="category-preview">
-
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-
-                    <div class="more-preview">+4</div>
-
-                </div>
-
-                <p class="category-desc">
-                    Mobile Apps, Dashboards, Web UI & Wireframes
-                </p>
-
-                <a href="ui.html" class="explore-btn">
-                    Explore Collection →
-                </a>
-            </div>
-
-
-            <div class="portfolio-card category-card">
-
-                <h3 class="category-title">More Creative Work</h3>
-
-                <div class="category-preview">
-
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-
-                    <div class="preview-placeholder"></div>
-                    <div class="preview-placeholder"></div>
-
-                    <div class="more-preview">
-                        <i class="fa-solid fa-star"></i>
+            <div class="skills-container">
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML5</span><span class="percent">95%</span>
                     </div>
-
+                    <div class="progress"><div class="progress-bar html"></div></div>
                 </div>
 
-                <p class="category-desc">
-                    New Projects, Creative Ideas & Upcoming Designs
-                </p>
-
-                <a href="more.html" class="explore-btn">
-    Explore Collection →
-    </a>
-            </div>
-
-               </div>  <!-- portfolio-grid CLOSE -->
-    </section>
-
-
-    <!-- LIGHTBOX -->
-
-    <div class="lightbox" id="lightbox">
-
-        <span class="close">&times;</span>
-
-        <img id="lightbox-img" src="" alt="Portfolio Image">
-
-    </div>
-
-    <!-- =========================
-     CERTIFICATIONS
-========================= -->
-
-    <section class="certifications" id="certifications" data-aos="fade-up">
-
-        <div class="section-title">
-
-            <p>
-                <i class="fa-solid fa-award"></i>
-                My Certifications
-            </p>
-
-            <h2>Learning & Achievements</h2>
-
-        </div>
-
-        <div class="cert-grid">
-
-            <div class="cert-card">
-
-                <div class="shine"></div>
-
-                <div class="cert-icon">
-                    🏆
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>CSS3</span><span class="percent">90%</span>
+                    </div>
+                    <div class="progress"><div class="progress-bar css"></div></div>
                 </div>
 
-                <h3>Google Certification</h3>
-
-                <p>Coming Soon</p>
-
-            </div>
-
-            <div class="cert-card">
-
-                <div class="shine"></div>
-
-                <div class="cert-icon">
-                    🎖️
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>JavaScript</span><span class="percent">75%</span>
+                    </div>
+                    <div class="progress"><div class="progress-bar js"></div></div>
                 </div>
 
-                <h3>Coursera Certification</h3>
-
-                <p>Coming Soon</p>
-
-            </div>
-
-            <div class="cert-card">
-
-                <div class="shine"></div>
-
-                <div class="cert-icon">
-                    ⭐
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Figma</span><span class="percent">85%</span>
+                    </div>
+                    <div class="progress"><div class="progress-bar figma"></div></div>
                 </div>
 
-                <h3>Meta Certification</h3>
-
-                <p>Coming Soon</p>
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Photoshop</span><span class="percent">90%</span>
+                    </div>
+                    <div class="progress"><div class="progress-bar photoshop"></div></div>
+                </div>
 
             </div>
+        </section>
 
-        </div>
+        <!-- SERVICES -->
+        <section class="services" id="services" data-aos="fade-up">
+            <div class="section-title">
+                <p><i class="fa-solid fa-briefcase"></i> My Services</p>
+                <h2>What Can I Do For You?</h2>
+            </div>
 
-    </section>
+            <div class="service-container">
 
-    <!-- =========================
-     EXPERIENCE
-========================= -->
-
-    <section class="experience" id="experience" data-aos="fade-up">
-
-        <div class="section-title">
-
-            <p>
-                <i class="fa-solid fa-briefcase"></i>
-                My Journey
-            </p>
-
-            <h2>Experience Timeline</h2>
-
-        </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item left">
-
-                <div class="timeline-content">
-
-                    <span>2023</span>
-
-                    <h3>Started Graphic Design</h3>
-
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Graphic Design</h3>
                     <p>
-                        Learned Photoshop, Illustrator and social media designing.
+                        Creative social media posts, branding, logos, posters
+                        and marketing designs.
                     </p>
-
                 </div>
 
-            </div>
-
-            <div class="timeline-item right">
-
-                <div class="timeline-content">
-
-                    <span>2024</span>
-
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
                     <h3>Web Development</h3>
-
                     <p>
-                        Started learning HTML, CSS and JavaScript to build responsive websites.
+                        Responsive and modern websites built with clean code
+                        and great user experience.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Beautiful interfaces designed for smooth and engaging
+                        digital experiences.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="portfolio" id="portfolio" data-aos="zoom-in">
+            <div class="section-title">
+                <p><i class="fa-solid fa-palette"></i> My Portfolio</p>
+                <h2>Recent Creative Works</h2>
+
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all" type="button">All</button>
+                    <button class="filter-btn" data-filter="graphic" type="button">Graphic Design</button>
+                    <button class="filter-btn" data-filter="web" type="button">Web Development</button>
+                    <button class="filter-btn" data-filter="ui" type="button">UI/UX</button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <!-- GRAPHIC DESIGN CARD -->
+                <div class="portfolio-card category-card"
+                    data-filter="graphic"
+                    data-page="graphic.html"
+                    role="link"
+                    tabindex="0"
+                    aria-label="Open Graphic Design collection"
+                    style="cursor:pointer">
+
+                    <h3 class="category-title">Graphic Design</h3>
+
+                    <div class="category-preview">
+                        <img src="images/portfolio/london-trip.png"
+                            class="preview-img" alt="Graphic design preview">
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="more-preview">+6</div>
+                    </div>
+
+                    <p class="category-desc">
+                        Posters, Logos, Branding, Social Media &amp; More
                     </p>
 
+                    <a href="graphic.html" class="explore-btn">
+                        Explore Collection →
+                    </a>
                 </div>
 
-            </div>
+                <!-- WEB DEVELOPMENT CARD -->
+                <div class="portfolio-card category-card"
+                    data-filter="web"
+                    data-page="web.html"
+                    role="link"
+                    tabindex="0"
+                    aria-label="Open Web Development collection"
+                    style="cursor:pointer">
 
-            <div class="timeline-item left">
+                    <h3 class="category-title">Web Development</h3>
 
-                <div class="timeline-content">
+                    <div class="category-preview">
+                        <img src="images/portfolio/glowsip.png"
+                            class="preview-img" alt="GlowSip website preview">
+                        <img src="images/portfolio/sai-vinayak.png"
+                            class="preview-img" alt="Sai Vinayak website preview">
+                        <img src="images/portfolio/fitzone.png"
+                            class="preview-img" alt="FitZone website preview">
+                        <img src="images/portfolio/technova.png"
+                            class="preview-img" alt="TechNova website preview">
+                        <div class="more-preview">+2</div>
+                    </div>
 
-                    <span>2025</span>
-
-                    <h3>Portfolio & Freelancing</h3>
-
-                    <p>
-                        Built my portfolio and started working on creative projects.
+                    <p class="category-desc">
+                        Responsive Websites, Landing Pages, Portfolios &amp; More
                     </p>
 
+                    <a href="web.html" class="explore-btn">
+                        Explore Collection →
+                    </a>
+                </div>
+
+                <!-- UI/UX CARD -->
+                <div class="portfolio-card category-card"
+                    data-filter="ui"
+                    data-page="ui.html"
+                    role="link"
+                    tabindex="0"
+                    aria-label="Open UI/UX Design collection"
+                    style="cursor:pointer">
+
+                    <h3 class="category-title">UI / UX Design</h3>
+
+                    <div class="category-preview">
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="more-preview">+4</div>
+                    </div>
+
+                    <p class="category-desc">
+                        Mobile Apps, Dashboards, Web UI &amp; Wireframes
+                    </p>
+
+                    <a href="ui.html" class="explore-btn">
+                        Explore Collection →
+                    </a>
+                </div>
+
+                <!-- MORE WORK CARD -->
+                <div class="portfolio-card category-card"
+                    data-filter="all"
+                    data-page="more.html"
+                    role="link"
+                    tabindex="0"
+                    aria-label="Open More Creative Work collection"
+                    style="cursor:pointer">
+
+                    <h3 class="category-title">More Creative Work</h3>
+
+                    <div class="category-preview">
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="preview-placeholder"></div>
+                        <div class="more-preview">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p class="category-desc">
+                        New Projects, Creative Ideas &amp; Upcoming Designs
+                    </p>
+
+                    <a href="more.html" class="explore-btn">
+                        Explore Collection →
+                    </a>
                 </div>
 
             </div>
+        </section>
 
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox">
+            <button class="close" type="button" aria-label="Close image">&times;</button>
+            <img id="lightbox-img" src="" alt="Portfolio image">
         </div>
 
-    </section>
-
-    <!-- CONTACT -->
-
-
-    <section class="contact" id="contact" data-aos="fade-up">
-
-        <div class="section-title">
-
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                Contact Me
-            </p>
-
-            <h2>
-                Let's Work Together
-            </h2>
-
-        </div>
-
-
-        <div class="contact-container">
-
-
-
-            <div class="contact-info">
-
-
-                <h3>
-                    Let's Connect
-                </h3>
-
-
-                <p>
-                    Have a project or collaboration in mind? Feel free to reach out. I'll get back to you as soon as
-                    possible.
-                </p>
-
-
-
-                <div class="info-box">
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    <div>
-
-                        <strong>
-                            Email
-                        </strong>
-
-                        <span>
-                            aakansha2428@gmail.com
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-                <div class="info-box">
-
-                    <i class="fa-solid fa-phone"></i>
-
-                    <div>
-
-                        <strong>
-                            Phone
-                        </strong>
-
-                        <span>
-                            +91 84484 37752
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-                <div class="info-box">
-
-                    <i class="fa-solid fa-location-dot"></i>
-
-                    <div>
-
-                        <strong>
-                            Location
-                        </strong>
-
-                        <span>
-                            Delhi, India
-                        </span>
-
-                    </div>
-
-                </div>
-
+        <!-- CERTIFICATIONS -->
+        <section class="certifications" id="certifications" data-aos="fade-up">
+            <div class="section-title">
+                <p><i class="fa-solid fa-award"></i> My Certifications</p>
+                <h2>Learning &amp; Achievements</h2>
             </div>
 
-            <form class="contact-form" id="contactForm">
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="shine"></div>
+                    <div class="cert-icon">🏆</div>
+                    <h3>Google Certification</h3>
+                    <p>Coming Soon</p>
+                </div>
 
-                <input type="text" name="name" placeholder="Your Name" required>
+                <div class="cert-card">
+                    <div class="shine"></div>
+                    <div class="cert-icon">🎖️</div>
+                    <h3>Coursera Certification</h3>
+                    <p>Coming Soon</p>
+                </div>
 
+                <div class="cert-card">
+                    <div class="shine"></div>
+                    <div class="cert-icon">⭐</div>
+                    <h3>Meta Certification</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </section>
 
-                <input type="email" name="email" placeholder="Your Email" required>
+        <!-- EXPERIENCE -->
+        <section class="experience" id="experience" data-aos="fade-up">
+            <div class="section-title">
+                <p><i class="fa-solid fa-briefcase"></i> My Journey</p>
+                <h2>Experience Timeline</h2>
+            </div>
 
-                <input type="text" name="subject" placeholder="Subject">
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span>2023</span>
+                        <h3>Started Graphic Design</h3>
+                        <p>Learned Photoshop, Illustrator and social media designing.</p>
+                    </div>
+                </div>
 
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span>2024</span>
+                        <h3>Web Development</h3>
+                        <p>Started learning HTML, CSS and JavaScript to build responsive websites.</p>
+                    </div>
+                </div>
 
-                <button class="btn" id="sendBtn" type="submit">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span>2025</span>
+                        <h3>Portfolio &amp; Freelancing</h3>
+                        <p>Built my portfolio and started working on creative projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- CONTACT -->
+        <section class="contact" id="contact" data-aos="fade-up">
+            <div class="section-title">
+                <p><i class="fa-solid fa-envelope"></i> Contact Me</p>
+                <h2>Let's Work Together</h2>
+            </div>
 
-                    <i class="fa-solid fa-paper-plane"></i>
-                    Send Message
-                </button>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
 
-            </form>
+                    <p>
+                        Have a project or collaboration in mind? Feel free to reach out.
+                        I'll get back to you as soon as possible.
+                    </p>
 
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>aakansha2428@gmail.com</span>
+                        </div>
+                    </div>
 
-        </div>
+                    <div class="info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <span>+91 84484 37752</span>
+                        </div>
+                    </div>
 
+                    <div class="info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
 
+                    <button class="btn" id="sendBtn" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
 
-
-
-
+    </main>
 
     <!-- FOOTER -->
-
-
     <footer class="footer">
-
-
-        <h2>
-            AAKANSHA
-        </h2>
-
-
-        <p>
-            Graphic Designer | Web Developer | UI/UX Designer
-        </p>
-
-
+        <h2>AAKANSHA</h2>
+        <p>Graphic Designer | Web Developer | UI/UX Designer</p>
 
         <div class="footer-links">
-
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
-
         </div>
 
-
-
-
         <p class="copyright">
-            © 2025 AAKANSHA. All Rights Reserved. Designed & Developed by AAKANSHA.
+            © 2025 AAKANSHA. All Rights Reserved.
+            Designed &amp; Developed by AAKANSHA.
         </p>
-
-
     </footer>
 
+    <!-- BACK TO TOP -->
+    <button id="topBtn" type="button" aria-label="Back to top">↑</button>
 
-
-
-
-    <!-- TOP BUTTON -->
-
-
-    <button id="topBtn">
-        ↑
-    </button>
-
-
-
-
-
-    <!-- Custom Cursor -->
+    <!-- CUSTOM CURSOR -->
     <div class="cursor"></div>
 
     <!-- SCRIPTS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
     <script src="js/script.js"></script>
 
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true
+        // Initialise animations
+        if (typeof AOS !== "undefined") {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
+
+        // Make the entire portfolio category card clickable
+        document.querySelectorAll(".category-card[data-page]").forEach(function (card) {
+            function openCard(event) {
+                // Let the collection link work normally
+                if (event.target.closest("a, button")) return;
+
+                window.location.href = card.dataset.page;
+            }
+
+            card.addEventListener("click", openCard);
+
+            // Keyboard accessibility: Enter or Space opens the card
+            card.addEventListener("keydown", function (event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    if (event.target.closest("a, button")) return;
+                    event.preventDefault();
+                    window.location.href = card.dataset.page;
+                }
+            });
         });
     </script>
 
-
 </body>
-
 </html>
